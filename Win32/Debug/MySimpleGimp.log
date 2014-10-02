@@ -1,0 +1,212 @@
+﻿Build started 2014-10-02 15:01:40.
+     1>Project "J:\PRZETWARZANIEOBRAZÓW\pto_mysimplegimp\MySimpleGimp.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Moc'ing bin_niblack_dialog.h...
+         Moc'ing corner_harris_dialog.h...
+         Moc'ing correction_dialog.h...
+         Moc'ing edge_canny_dialog.h...
+         Moc'ing edge_zero_dialog.h...
+         Moc'ing gaussian_dialog.h...
+         Moc'ing histogramviewer.h...
+         Moc'ing hough_dialog.h...
+         Moc'ing hough_lines_dialog.h...
+         Moc'ing imageviewer.h...
+         Moc'ing linear_dialog.h...
+         Moc'ing mainwindow.h...
+         Moc'ing map_horizon_dialog.h...
+         Moc'ing map_normal_dialog.h...
+         Moc'ing mask_dialog.h...
+         Moc'ing morph_dialog.h...
+         Moc'ing noise_bilateral_dialog.h...
+         Moc'ing noise_median_dialog.h...
+         Moc'ing slider_dialog.h...
+         Moc'ing tools.h...
+         Moc'ing toolsmenu.h...
+         Moc'ing transformation.h...
+       ClCompile:
+         C:\software\vs2013\VC\bin\CL.exe /c /Isrc /Isrc\core /Isrc\gui /IC:\software\qt\5.3\msvc2013\include /IC:\software\qt\5.3\msvc2013\include\QtWidgets /IC:\software\qt\5.3\msvc2013\include\QtGui /IC:\software\qt\5.3\msvc2013\include\QtANGLE /IC:\software\qt\5.3\msvc2013\include\QtCore /Idebug /I. /I"C:\software\qt\5.3\msvc2013\mkspecs\win32-msvc2013" /I.\GeneratedFiles /IC:\software\qt\5.3\msvc2013\include\QtGui\5.3.1 /Zi /nologo /W2 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_OPENGL_ES_2 /D QT_OPENGL_ES_2_ANGLE /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 Debug\moc_bin_niblack_dialog.cpp Debug\moc_corner_harris_dialog.cpp Debug\moc_correction_dialog.cpp Debug\moc_edge_canny_dialog.cpp Debug\moc_edge_zero_dialog.cpp Debug\moc_gaussian_dialog.cpp Debug\moc_histogramviewer.cpp Debug\moc_hough_dialog.cpp Debug\moc_hough_lines_dialog.cpp Debug\moc_imageviewer.cpp Debug\moc_linear_dialog.cpp Debug\moc_mainwindow.cpp Debug\moc_map_horizon_dialog.cpp Debug\moc_map_normal_dialog.cpp Debug\moc_mask_dialog.cpp Debug\moc_morph_dialog.cpp Debug\moc_noise_bilateral_dialog.cpp Debug\moc_noise_median_dialog.cpp Debug\moc_slider_dialog.cpp Debug\moc_tools.cpp Debug\moc_toolsmenu.cpp Debug\moc_transformation.cpp src\core\transformations\bin_gradient.cpp src\core\transformations\bin_iterbimodal.cpp src\core\transformations\bin_manual.cpp src\core\transformations\bin_niblack.cpp src\gui\dialogs\bin_niblack_dialog.cpp src\core\transformations\bin_otsu.cpp src\core\transformations\blur_gaussian.cpp src\core\transformations\blur_linear.cpp src\core\transformations\blur_uniform.cpp src\core\transformations\conversion_grayscale.cpp src\core\transformations\convolution.cpp src\core\transformations\corner_harris.cpp src\gui\dialogs\corner_harris_dialog.cpp src\core\transformations\correction.cpp src\gui\dialogs\correction_dialog.cpp src\core\transformations\edge_canny.cpp src\gui\dialogs\edge_canny_dialog.cpp src\core\transformations\edge_gradient.cpp src\core\transformations\edge_laplacian.cpp src\core\transformations\edge_laplacian_of_gauss.cpp src\core\transformations\edge_prewitt.cpp src\core\transformations\edge_roberts.cpp src\core\transformations\edge_sobel.cpp src\core\transformations\edge_zero.cpp src\gui\dialogs\edge_zero_dialog.cpp src\gui\dialogs\gaussian_dialog.cpp src\core\histogram.cpp src\core\transformations\histogram_equalization.cpp src\core\transformations\histogram_stretching.cpp src\gui\histogramviewer.cpp src\core\transformations\hough.cpp src\gui\dialogs\hough_dialog.cpp src\core\transformations\hough_lines.cpp src\gui\dialogs\hough_lines_dialog.cpp src\core\transformations\hough_rectangles.cpp src\gui\imageviewer.cpp src\gui\dialogs\linear_dialog.cpp src\main.cpp src\gui\mainwindow.cpp src\core\transformations\map_height.cpp src\core\transformations\map_horizon.cpp src\gui\dialogs\map_horizon_dialog.cpp src\core\transformations\map_normal.cpp src\gui\dialogs\map_normal_dialog.cpp src\gui\dialogs\mask_dialog.cpp src\gui\dialogs\morph_dialog.cpp src\core\transformations\morph_dilate.cpp src\core\transformations\morph_erode.cpp src\core\transformations\morph_openclose.cpp src\core\transformations\morphological_operator.cpp src\core\transformations\negative_image.cpp src\core\transformations\noise_bilateral.cpp src\gui\dialogs\noise_bilateral_dialog.cpp src\core\transformations\noise_median.cpp src\gui\dialogs\noise_median_dialog.cpp src\core\pnm.cpp src\core\transformations\segmentation.cpp src\gui\dialogs\slider_dialog.cpp src\core\tools.cpp src\gui\toolsmenu.cpp src\core\transformations\transformation.cpp
+         moc_bin_niblack_dialog.cpp
+         moc_corner_harris_dialog.cpp
+         moc_correction_dialog.cpp
+         moc_edge_canny_dialog.cpp
+         moc_edge_zero_dialog.cpp
+         moc_gaussian_dialog.cpp
+         moc_histogramviewer.cpp
+         moc_hough_dialog.cpp
+         moc_hough_lines_dialog.cpp
+         moc_imageviewer.cpp
+         moc_linear_dialog.cpp
+         moc_mainwindow.cpp
+         moc_map_horizon_dialog.cpp
+         moc_map_normal_dialog.cpp
+         moc_mask_dialog.cpp
+         moc_morph_dialog.cpp
+         moc_noise_bilateral_dialog.cpp
+         moc_noise_median_dialog.cpp
+         moc_slider_dialog.cpp
+         moc_tools.cpp
+         Generating Code...
+         Compiling...
+         moc_toolsmenu.cpp
+         moc_transformation.cpp
+         bin_gradient.cpp
+         bin_iterbimodal.cpp
+         bin_manual.cpp
+         bin_niblack.cpp
+         bin_niblack_dialog.cpp
+         bin_otsu.cpp
+         blur_gaussian.cpp
+         blur_linear.cpp
+         blur_uniform.cpp
+         conversion_grayscale.cpp
+         convolution.cpp
+         corner_harris.cpp
+         corner_harris_dialog.cpp
+         correction.cpp
+         correction_dialog.cpp
+         edge_canny.cpp
+         edge_canny_dialog.cpp
+         edge_gradient.cpp
+         Generating Code...
+         Compiling...
+         edge_laplacian.cpp
+         edge_laplacian_of_gauss.cpp
+         edge_prewitt.cpp
+         edge_roberts.cpp
+         edge_sobel.cpp
+         edge_zero.cpp
+         edge_zero_dialog.cpp
+         gaussian_dialog.cpp
+         histogram.cpp
+         histogram_equalization.cpp
+         histogram_stretching.cpp
+         histogramviewer.cpp
+         hough.cpp
+         hough_dialog.cpp
+         hough_lines.cpp
+         hough_lines_dialog.cpp
+         hough_rectangles.cpp
+         imageviewer.cpp
+         linear_dialog.cpp
+         main.cpp
+         Generating Code...
+         Compiling...
+         mainwindow.cpp
+         map_height.cpp
+         map_horizon.cpp
+         map_horizon_dialog.cpp
+         map_normal.cpp
+         map_normal_dialog.cpp
+         mask_dialog.cpp
+         morph_dialog.cpp
+         morph_dilate.cpp
+         morph_erode.cpp
+         morph_openclose.cpp
+         morphological_operator.cpp
+         negative_image.cpp
+         noise_bilateral.cpp
+         noise_bilateral_dialog.cpp
+         noise_median.cpp
+         noise_median_dialog.cpp
+         pnm.cpp
+         segmentation.cpp
+         slider_dialog.cpp
+         Generating Code...
+         Compiling...
+         tools.cpp
+         toolsmenu.cpp
+         transformation.cpp
+         Generating Code...
+         C:\software\vs2013\VC\bin\CL.exe /c /Isrc /Isrc\core /Isrc\gui /IC:\software\qt\5.3\msvc2013\include /IC:\software\qt\5.3\msvc2013\include\QtWidgets /IC:\software\qt\5.3\msvc2013\include\QtGui /IC:\software\qt\5.3\msvc2013\include\QtANGLE /IC:\software\qt\5.3\msvc2013\include\QtCore /Idebug /I. /I"C:\software\qt\5.3\msvc2013\mkspecs\win32-msvc2013" /I.\GeneratedFiles /IC:\software\qt\5.3\msvc2013\include\QtGui\5.3.1 /Zi /nologo /W2 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_OPENGL_ES_2 /D QT_OPENGL_ES_2_ANGLE /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 GeneratedFiles\qrc_icons.cpp
+         qrc_icons.cpp
+       Link:
+         C:\software\vs2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\MySimpleGimp.exe" /NOLOGO /LIBPATH:C:\software\qt\5.3\msvc2013\lib /LIBPATH:C:\software\qt\5.3\msvc2013\lib C:\software\qt\5.3\msvc2013\lib\qtmaind.lib C:\software\qt\5.3\msvc2013\lib\Qt5Widgetsd.lib C:\software\qt\5.3\msvc2013\lib\Qt5Guid.lib C:\software\qt\5.3\msvc2013\lib\Qt5Cored.lib libEGLd.lib libGLESv2d.lib gdi32.lib user32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\MySimpleGimp.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" Win32\Debug\moc_bin_niblack_dialog.obj
+         Win32\Debug\moc_corner_harris_dialog.obj
+         Win32\Debug\moc_correction_dialog.obj
+         Win32\Debug\moc_edge_canny_dialog.obj
+         Win32\Debug\moc_edge_zero_dialog.obj
+         Win32\Debug\moc_gaussian_dialog.obj
+         Win32\Debug\moc_histogramviewer.obj
+         Win32\Debug\moc_hough_dialog.obj
+         Win32\Debug\moc_hough_lines_dialog.obj
+         Win32\Debug\moc_imageviewer.obj
+         Win32\Debug\moc_linear_dialog.obj
+         Win32\Debug\moc_mainwindow.obj
+         Win32\Debug\moc_map_horizon_dialog.obj
+         Win32\Debug\moc_map_normal_dialog.obj
+         Win32\Debug\moc_mask_dialog.obj
+         Win32\Debug\moc_morph_dialog.obj
+         Win32\Debug\moc_noise_bilateral_dialog.obj
+         Win32\Debug\moc_noise_median_dialog.obj
+         Win32\Debug\moc_slider_dialog.obj
+         Win32\Debug\moc_tools.obj
+         Win32\Debug\moc_toolsmenu.obj
+         Win32\Debug\moc_transformation.obj
+         Win32\Debug\qrc_icons.obj
+         Win32\Debug\bin_gradient.obj
+         Win32\Debug\bin_iterbimodal.obj
+         Win32\Debug\bin_manual.obj
+         Win32\Debug\bin_niblack.obj
+         Win32\Debug\bin_niblack_dialog.obj
+         Win32\Debug\bin_otsu.obj
+         Win32\Debug\blur_gaussian.obj
+         Win32\Debug\blur_linear.obj
+         Win32\Debug\blur_uniform.obj
+         Win32\Debug\conversion_grayscale.obj
+         Win32\Debug\convolution.obj
+         Win32\Debug\corner_harris.obj
+         Win32\Debug\corner_harris_dialog.obj
+         Win32\Debug\correction.obj
+         Win32\Debug\correction_dialog.obj
+         Win32\Debug\edge_canny.obj
+         Win32\Debug\edge_canny_dialog.obj
+         Win32\Debug\edge_gradient.obj
+         Win32\Debug\edge_laplacian.obj
+         Win32\Debug\edge_laplacian_of_gauss.obj
+         Win32\Debug\edge_prewitt.obj
+         Win32\Debug\edge_roberts.obj
+         Win32\Debug\edge_sobel.obj
+         Win32\Debug\edge_zero.obj
+         Win32\Debug\edge_zero_dialog.obj
+         Win32\Debug\gaussian_dialog.obj
+         Win32\Debug\histogram.obj
+         Win32\Debug\histogram_equalization.obj
+         Win32\Debug\histogram_stretching.obj
+         Win32\Debug\histogramviewer.obj
+         Win32\Debug\hough.obj
+         Win32\Debug\hough_dialog.obj
+         Win32\Debug\hough_lines.obj
+         Win32\Debug\hough_lines_dialog.obj
+         Win32\Debug\hough_rectangles.obj
+         Win32\Debug\imageviewer.obj
+         Win32\Debug\linear_dialog.obj
+         Win32\Debug\main.obj
+         Win32\Debug\mainwindow.obj
+         Win32\Debug\map_height.obj
+         Win32\Debug\map_horizon.obj
+         Win32\Debug\map_horizon_dialog.obj
+         Win32\Debug\map_normal.obj
+         Win32\Debug\map_normal_dialog.obj
+         Win32\Debug\mask_dialog.obj
+         Win32\Debug\morph_dialog.obj
+         Win32\Debug\morph_dilate.obj
+         Win32\Debug\morph_erode.obj
+         Win32\Debug\morph_openclose.obj
+         Win32\Debug\morphological_operator.obj
+         Win32\Debug\negative_image.obj
+         Win32\Debug\noise_bilateral.obj
+         Win32\Debug\noise_bilateral_dialog.obj
+         Win32\Debug\noise_median.obj
+         Win32\Debug\noise_median_dialog.obj
+         Win32\Debug\pnm.obj
+         Win32\Debug\segmentation.obj
+         Win32\Debug\slider_dialog.obj
+         Win32\Debug\tools.obj
+         Win32\Debug\toolsmenu.obj
+         Win32\Debug\transformation.obj
+         MySimpleGimp.vcxproj -> J:\PRZETWARZANIEOBRAZÓW\pto_mysimplegimp\debug\MySimpleGimp.exe
+     1>Done Building Project "J:\PRZETWARZANIEOBRAZÓW\pto_mysimplegimp\MySimpleGimp.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:02:00.38

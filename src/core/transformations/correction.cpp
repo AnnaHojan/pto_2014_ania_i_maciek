@@ -21,7 +21,36 @@ PNM* Correction::transform()
 
     PNM* newImage = new PNM(width, height, image->format());
 
-    qDebug() << Q_FUNC_INFO << "Not implemented yet!";
+	//qDebug() << Q_FUNC_INFO << "Not implemented yet!";
+	for (int i = 0; i <= 255; i++)
+	{
+		LUT[i] = i;
+	}
+	for (int i = 0; i <= 255; i++)
+	{
+		LUT[i] = int(LUT[i] + shift);
+		LUT[i] = int(LUT[i] * factor);
+		LUT[i] = int(pow(LUT[i], gamma));
+		if (LUT[i] > 255)
+		{
+			LUT[i] = 255;
+		}
+	}
+	// Iterate over image space
+	for (int x = 0; x<width; x++)
+		for (int y = 0; y<height; y++)
+		{
+		QRgb pixel = image->pixel(x, y); // Getting the pixel(x,y) value
+
+		int r = qRed(pixel);    // Get the 0-255 value of the R channel
+		int g = qGreen(pixel);  // Get the 0-255 value of the G channel
+		int b = qBlue(pixel);   // Get the 0-255 value of the B channel
+		r = LUT[r];
+		g = LUT[g];
+		b = LUT[b];
+		QColor newPixel = QColor(r, g, b);
+		newImage->setPixel(x, y, newPixel.rgb());
+		}
 
     return newImage;
 }

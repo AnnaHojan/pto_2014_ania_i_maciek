@@ -35,6 +35,10 @@ PNM* Correction::transform()
 		{
 			LUT[i] = 255;
 		}
+		else if (LUT[i] < 0)
+		{
+			LUT[i] = 0;
+		}
 	}
 	// Iterate over image space
 	for (int x = 0; x<width; x++)

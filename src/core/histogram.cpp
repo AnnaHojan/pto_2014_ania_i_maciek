@@ -24,15 +24,114 @@ Histogram::~Histogram()
 
 void Histogram::generate(QImage* image)
 {
-    qDebug() << Q_FUNC_INFO << "Not implemented yet!";
+    int width = image->width();
+	int height = image->height();
+	if (image->format() == QImage::Format_Indexed8)
+	{
+		for (int x = 0; x<width; x++)
+			for (int y = 0; y<height; y++)
+			{
+				QRgb pixel = image->pixel(x, y); // Getting the pixel(x,y) value
+
+				int v = qGray(pixel);    
+
+			if (L->contains(v))
+			{
+				L->insert(v, L->value(v) + 1);
+				
+			}
+			else
+			{
+				L->insert(v, 1);
+			}
+			}
+
+
+
+	}
+	else if (image->format() == QImage::Format_RGB32)
+	{
+		for (int x = 0; x<width; x++)
+			for (int y = 0; y < height; y++)
+			{
+				QRgb pixel = image->pixel(x, y); // Getting the pixel(x,y) value
+
+				int r = qRed(pixel);    // Get the 0-255 value of the R channel
+				int g = qGreen(pixel);  // Get the 0-255 value of the G channel
+				int b = qBlue(pixel);   // Get the 0-255 value of the B channel
+				if (R->contains(r))
+				{
+					R->insert(r, R->value(r) + 1);
+					
+				}
+				else
+				{
+					R->insert(r, 1);
+				}
+				if (G->contains(g))
+				{
+					
+					G->insert(g, G->value(g) + 1);
+				}
+				else
+				{
+					G->insert(g, 1);
+				}
+				if (B->contains(b))
+				{
+					
+					B->insert(b, B->value(b) + 1);
+				}
+				else
+				{
+					B->insert(b, 1);
+				}
+
+			}
+
+	}
+
 }
 
 /** Returns the maximal value of the histogram in the given channel */
 int Histogram::maximumValue(Channel selectedChannel = RGB)
 {
-    qDebug() << Q_FUNC_INFO << "Not implemented yet!";
-
-    return 0;
+int maxVal = 1;
+	if (selectedChannel == RGB)
+	{
+		foreach(int i, R->values())
+		{
+			if (i > maxVal)
+			{
+				maxVal = i;
+			}
+		}
+		foreach(int i, G->values())
+		{
+			if (i > maxVal)
+			{
+				maxVal = i;
+			}
+		}
+		foreach(int i, B->values())
+		{
+			if (i > maxVal)
+			{
+				maxVal = i;
+			}
+		}
+	}
+	else
+	{
+		foreach(int i, get(selectedChannel)->values())
+		{
+			if (i > maxVal)
+			{
+				maxVal = i;
+			}
+		}
+	}
+    return maxVal;
 }
 
 

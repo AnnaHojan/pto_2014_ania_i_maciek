@@ -1,0 +1,892 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{195e2fd4-dc37-4f4e-a2bc-ae0b69abe1fe}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{759382d8-216a-446f-9ade-c94fd00852b8}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\transformations\bin_gradient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\bin_iterbimodal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\bin_manual.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\bin_niblack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\bin_niblack_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\bin_otsu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\blur_gaussian.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\blur_linear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\blur_uniform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\conversion_grayscale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\convolution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\corner_harris.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\corner_harris_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\correction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\correction_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\edge_canny.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\edge_canny_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\edge_gradient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\edge_laplacian.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\edge_laplacian_of_gauss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\edge_prewitt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\edge_roberts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\edge_sobel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\edge_zero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\edge_zero_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\gaussian_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\histogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\histogram_equalization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\histogram_stretching.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\histogramviewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\hough.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\hough_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\hough_lines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\hough_lines_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\hough_rectangles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\imageviewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\linear_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\map_height.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\map_horizon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\map_horizon_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\map_normal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\map_normal_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\mask_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\morph_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\morph_dilate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\morph_erode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\morph_openclose.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\morphological_operator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\negative_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\noise_bilateral.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\noise_bilateral_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\noise_median.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\noise_median_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\pnm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\segmentation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dialogs\slider_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\toolsmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\transformations\transformation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_bin_niblack_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_bin_niblack_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_corner_harris_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_corner_harris_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_correction_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_correction_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_edge_canny_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_edge_canny_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_edge_zero_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_edge_zero_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_gaussian_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_gaussian_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_histogramviewer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_histogramviewer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_hough_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_hough_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_hough_lines_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_hough_lines_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_imageviewer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_imageviewer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_linear_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_linear_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_mainwindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_mainwindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_map_horizon_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_map_horizon_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_map_normal_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_map_normal_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_mask_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_mask_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_morph_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_morph_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_noise_bilateral_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_noise_bilateral_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_noise_median_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_noise_median_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_slider_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_slider_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_tools.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_tools.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_toolsmenu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_toolsmenu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_transformation.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_transformation.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_icons.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\transformations\bin_gradient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\bin_iterbimodal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\bin_manual.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\bin_niblack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\dialogs\bin_niblack_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\core\transformations\bin_otsu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\blur_gaussian.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\blur_linear.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\blur_uniform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\matrix\cmatrix">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\conversion_grayscale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\convolution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\corner_harris.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\dialogs\corner_harris_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\core\transformations\correction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\dialogs\correction_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\gui\dialogs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\edge_canny.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\dialogs\edge_canny_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\core\transformations\edge_gradient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\edge_laplacian.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\edge_laplacian_of_gauss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\edge_prewitt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\edge_roberts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\edge_sobel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\edge_zero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\dialogs\edge_zero_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\gaussian_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\core\histogram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\histogram_equalization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\histogram_stretching.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\histogramviewer.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\core\transformations\hough.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\dialogs\hough_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\core\transformations\hough_lines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\dialogs\hough_lines_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\core\transformations\hough_rectangles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\imageviewer.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\linear_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\core\transformations\map_height.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\map_horizon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\dialogs\map_horizon_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\core\transformations\map_normal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\dialogs\map_normal_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\mask_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\core\matrix\matrix.cc">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\matrix\matrix2.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\dialogs\morph_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\core\transformations\morph_dilate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\morph_erode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\morph_openclose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\morphological_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\negative_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\noise_bilateral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\dialogs\noise_bilateral_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\core\transformations\noise_median.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\dialogs\noise_median_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\core\pnm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\transformations\segmentation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\gui\dialogs\slider_dialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\core\tools.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\toolsmenu.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\core\transformations\transformation.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\core\transformations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_bin_niblack_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_corner_harris_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_correction_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_edge_canny_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_edge_zero_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_gaussian_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_histogramviewer.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_hough_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_hough_lines_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_imageviewer.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_linear_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_mainwindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_map_horizon_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_map_normal_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_mask_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_morph_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_noise_bilateral_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_noise_median_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_slider_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_toolsmenu.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\gui\dialogs\bin_niblack_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\corner_harris_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\correction_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\edge_canny_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\edge_zero_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\gaussian_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\histogramviewer.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\hough_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\hough_lines_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\imageviewer.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\linear_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\map_horizon_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\map_normal_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\mask_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\morph_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\noise_bilateral_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\noise_median_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dialogs\slider_dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\toolsmenu.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\icons\arrow_divide.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\arrow_in.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\arrow_join.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\arrow_out.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\chart_curve.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\chart_curve_add.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\chart_curve_delete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\chart_curve_error.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\chart_curve_go.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\chart_line_edit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\checkerboard.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\convert_color_to_gray.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\document_shapes.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\door_out.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\draw_convolve.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\edge_detection.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\eye.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\eye_blue.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\eye_gray.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\eye_green.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\eye_red.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\filter.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\flag_airfield_vehicle_safety.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\folder.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="res\icons.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="res\icons\key_a.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_b.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_c.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_d.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_e.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_f.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_g.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_i.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_j.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_k.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_l.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_m.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_o.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_q.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_r.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_s.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_t.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_u.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_v.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_w.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_y.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\key_z.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\lightbulb.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\personal_finance.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\things_digital.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\transform_rotate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\transform_rotate_180.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\transform_rotate_270.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\transform_rotate_90.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\universal_binary.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\videodisplay.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\witch.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\zoom_extend.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\zoom_in.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\zoom_last.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons\zoom_out.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

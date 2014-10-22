@@ -35,15 +35,15 @@ void Histogram::generate(QImage* image)
 
 				int v = qGray(pixel);    
 
-			if (L->contains(v))
-			{
-				L->insert(v, L->value(v) + 1);
+				if (L->contains(v))
+				{
+					L->insert(v, L->value(v) + 1);
 				
-			}
-			else
-			{
-				L->insert(v, 1);
-			}
+				}
+				else
+				{
+					L->insert(v, 1);
+				}
 			}
 
 
@@ -59,27 +59,27 @@ void Histogram::generate(QImage* image)
 				int r = qRed(pixel);    // Get the 0-255 value of the R channel
 				int g = qGreen(pixel);  // Get the 0-255 value of the G channel
 				int b = qBlue(pixel);   // Get the 0-255 value of the B channel
+
 				if (R->contains(r))
 				{
 					R->insert(r, R->value(r) + 1);
-					
 				}
 				else
 				{
 					R->insert(r, 1);
 				}
+
 				if (G->contains(g))
 				{
-					
 					G->insert(g, G->value(g) + 1);
 				}
 				else
 				{
 					G->insert(g, 1);
 				}
+
 				if (B->contains(b))
 				{
-					
 					B->insert(b, B->value(b) + 1);
 				}
 				else
@@ -96,7 +96,7 @@ void Histogram::generate(QImage* image)
 /** Returns the maximal value of the histogram in the given channel */
 int Histogram::maximumValue(Channel selectedChannel = RGB)
 {
-int maxVal = 1;
+	int maxVal = 1;
 	if (selectedChannel == RGB)
 	{
 		foreach(int i, R->values())

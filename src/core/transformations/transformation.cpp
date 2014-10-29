@@ -103,7 +103,26 @@ QRgb Transformation::getPixel(int x, int y, Mode mode)
  */
 QRgb Transformation::getPixelCyclic(int x, int y)
 {
-    qDebug() << Q_FUNC_INFO << "Not implemented yet!";
+	int width = image->width();
+	int height = image->height();
+
+	if (x > width - 1)
+	{
+		x = x - width;
+	}
+	else if (x < 0)
+	{
+		x = x + width;
+	}
+
+	if (y > height - 1)
+	{
+		y = y - height;
+	}
+	else if (y < 0)
+	{
+		y = y + height;
+	}
 
     return image->pixel(x,y);
 }
@@ -114,9 +133,18 @@ QRgb Transformation::getPixelCyclic(int x, int y)
   */
 QRgb Transformation::getPixelNull(int x, int y)
 {
-    qDebug() << Q_FUNC_INFO << "Not implemented yet!";
+	int width = image->width();
+	int height = image->height();
 
-    return image->pixel(x,y);
+	if (x > width - 1 || x < 0 || y > height - 1 || y < 0)
+	{
+		QRgb pixel = qRgb(0, 0, 0);
+		return pixel;
+	}
+	else
+	{
+		return image->pixel(x, y);
+	}
 }
 
 /**
@@ -126,7 +154,26 @@ QRgb Transformation::getPixelNull(int x, int y)
   */
 QRgb Transformation::getPixelRepeat(int x, int y)
 {
-    qDebug() << Q_FUNC_INFO << "Not implemented yet!";
+	int width = image->width();
+	int height = image->height();
+
+	if (x > width - 1)
+	{
+		x = width - 1;
+	}
+	else if (x < 0)
+	{
+		x = 0;
+	}
+
+	if (y > height - 1)
+	{
+		y = y - height;
+	}
+	else if (y < 0)
+	{
+		y = 0;
+	}
 
     return image->pixel(x,y);
 }
@@ -138,7 +185,30 @@ math::matrix<float> Transformation::getWindow(int x, int y, int size,
 {
     math::matrix<float> window(size,size);
 
-    qDebug() << Q_FUNC_INFO << "Not implemented yet!";
+	int sasiadow = size / 2;
+	int od_x = x - sasiadow;
+	int do_x = x + sasiadow;
+	int od_y = y - sasiadow;
+	int do_y = y + sasiadow;
+
+	int licznik_x = 0;
+	int licznik_y = 0;
+	for (int i = od_x; i <= do_x; i++)
+	{
+		for (int j = od_y; j <= do_y; j++)
+		{
+			QRgb pixel = getPixel(i, j, mode);
+			int value;
+			if (channel == LChannel) value = qGray(pixel);
+			if (channel == RChannel) value = qRed(pixel);
+			if (channel == GChannel) value = qGreen(pixel);
+			if (channel == BChannel) value = qBlue(pixel);
+			window(licznik_x, licznik_y) = value;
+			++licznik_y;
+		}
+		++licznik_x;
+		licznik_y = 0;
+	}
 
     return window;
 }

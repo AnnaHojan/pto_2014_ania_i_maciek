@@ -35,7 +35,43 @@ PNM* MapHorizon::transform()
 
     PNM* newImage = new PNM(width, height, QImage::Format_Indexed8);
 
-    qDebug() << Q_FUNC_INFO << "Not implemented yet!";
+
+	PNM* mapa_wys = MapHeight(image).transform();
+
+	for (int i = 0; i < width; i++) {
+		for (int j = 0; j < height; j++) {
+
+			float alfa = 0;
+			int current_h = qGray(mapa_wys->pixel(i, j));
+
+			for (
+				int k = i + dx, l = j + dy;
+				k < width && l < height && k >= 0 && l >= 0;
+				k = k + dx, l = l + dy
+			) {
+
+				int ray_h = qGray(mapa_wys->pixel(k, l));
+				if (current_h < ray_h) {
+
+					float dist = sqrt(((k - i)*(k - i)) + ((l - j)*(l - j))) * scale;
+					float ray_alfa = atan((ray_h - current_h) / dist);
+
+					if (ray_alfa > alfa) {
+						alfa = ray_alfa;
+					}
+				}
+			}
+
+			float delta = alfa - ((sun_alpha * M_PI) / 180);
+			if (delta > 0) {
+				newImage->setPixel(i, j, cos(delta) * 255);
+			}
+			else {
+				newImage->setPixel(i, j, 255);
+			}
+
+		}
+	}
 
     return newImage;
 }

@@ -37,7 +37,14 @@ PNM* EdgeGradient::transform()
 				QRgb pixel_y = ImageY->pixel(x, y);
 				int v_x = qGray(pixel_x);
 				int v_y = qGray(pixel_y);
-				newImage->setPixel(x, y, sqrt((v_x * v_x) + (v_y * v_y)));
+
+				int gray = sqrt((v_x * v_x) + (v_y * v_y));
+				if (gray > 255)
+					gray = 255;
+				else if (gray < 0)
+					gray = 0;
+
+				newImage->setPixel(x, y, gray);
 			}
 		}
 
@@ -57,11 +64,30 @@ PNM* EdgeGradient::transform()
 				int v_x_b = qBlue(pixel_x);
 				int v_y_b = qBlue(pixel_y);
 
+
+				int one = sqrt((v_x_r * v_x_r) + (v_y_r * v_y_r));
+				int two = sqrt((v_x_g * v_x_g) + (v_y_g * v_y_g));
+				int three = sqrt((v_x_b * v_x_b) + (v_y_b * v_y_b));
+
+				if (one > 255)
+					one = 255;
+				else if (one < 0)
+					one = 0;
+				if (two > 255)
+					two = 255;
+				else if (two < 0)
+					two = 0;
+				if (three > 255)
+					three = 255;
+				else if (three < 0)
+					three = 0;
+
 				QColor newPixel = QColor(
-					sqrt((v_x_r * v_x_r) + (v_y_r * v_y_r)),
-					sqrt((v_x_g * v_x_g) + (v_y_g * v_y_g)),
-					sqrt((v_x_b * v_x_b) + (v_y_b * v_y_b))
-					);
+					one,
+					two,
+					three
+				);
+
 				newImage->setPixel(x, y, newPixel.rgb());
 			}
 		}

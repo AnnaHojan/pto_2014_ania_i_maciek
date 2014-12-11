@@ -25,7 +25,7 @@ PNM* EdgeZeroCrossing::transform()
 	ELOG.setParameter("size", getParameter("size"));
 	ELOG.setParameter("sigma", getParameter("sigma"));
 
-	PNM* newImage = ELOG.transform();
+	PNM* newImage = new PNM(width, height, QImage::Format_Indexed8);
 	Transformation laplasjan(ELOG.transform());
 
 	int v_0 = 128;
@@ -75,8 +75,8 @@ PNM* EdgeZeroCrossing::transform()
 				math::matrix<float> maskaB = laplasjan.getWindow(i, j, size, BChannel, RepeatEdge);
 
 
-				int minR, minG, minB = 255;
-				int	maxR, maxG, maxB = 0;
+				int minR = 255; int minG = 255; int minB = 255;
+				int	maxR = 0; int maxG = 0; int maxB = 0;
 
 				for (int x = 0; x < size; x++)
 				{
@@ -99,22 +99,27 @@ PNM* EdgeZeroCrossing::transform()
 					}
 				}
 
-				int r_val, g_val, b_val = 0;
+				int r_val, g_val, b_val;
 
 				if (minR < (v_0 - t) && maxR >(v_0 + t))
 				{
 					r_val = maskaR(size / 2, size / 2);
+					newImage->setPixel(i, j, maskaR(size / 2, size / 2));
 				}
-				if (minG < (v_0 - t) && maxG >(v_0 + t))
+				else if (minG < (v_0 - t) && maxG >(v_0 + t))
 				{
 					g_val = maskaG(size / 2, size / 2);
+					newImage->setPixel(i, j, g_val);
 				}
-				if (minB < (v_0 - t) && maxB >(v_0 + t))
+				else if (minB < (v_0 - t) && maxB >(v_0 + t))
 				{
 					b_val = maskaB(size / 2, size / 2);
+					newImage->setPixel(i, j, b_val);
 				}
-
-				newImage->setPixel(i, j, qRgb(r_val, g_val, b_val));
+				else
+				{
+					newImage->setPixel(i, j, 0);
+				}
 
 			}
 		}

@@ -1,0 +1,7 @@
+Odnośnie uwagi "Roberts i metoda przejść przez zero dają złe wyniki":
+
+Roberts daje identyczny wynik jak oczekiwany, jednak tylko jeśli wywołanie go
+będzie pierwszą akcją po uruchomieniu programu i wczytaniu grafiki (roberts1.jpg).
+Po wczytaniu kolejnego obrazka i ponownym użyciu Robertsa, obraz rozmywa się (roberts2.jpg).
+Zakładamy, że jest to jakiś bug w samym szkielecie projektu (metody zdają się być w porządku: 
+przebadaliśmy convolution::convolute, edge_roberts::prepareMatrices i edge_gradients::transform).

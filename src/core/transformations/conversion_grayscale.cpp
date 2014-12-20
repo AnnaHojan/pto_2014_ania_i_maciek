@@ -12,8 +12,6 @@ ConversionGrayscale::ConversionGrayscale(PNM* img, ImageViewer* iv) :
 
 PNM* ConversionGrayscale::transform()
 {
-    qDebug() << Q_FUNC_INFO << "Not implemented yet!";
-
     int width = image->width();
     int height = image->height();
 
